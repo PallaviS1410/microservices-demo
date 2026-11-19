@@ -66,6 +66,6 @@ jobs:
           push: true
           tags: |
             ghcr.io/pallavis1410/online-boutique-${{ matrix.service }}:latest
-            ghcr.io/pallavis1410/online-boutique-${{ matrix.service }}:${{ github.sha }}}
+            ghcr.io/pallavis1410/online-boutique-${{ matrix.service }}:${{ github.sha }}
           cache-from: type=gha,scope=${{ matrix.service }}
           cache-to: type=gha,mode=max,scope=${{ matrix.service }}
